@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="js">
+  <snippet>
+    <tag>ngfor</tag>
+    <text><![CDATA[angular.forEach(${1:collection}, function (value, key) {
+	$0
+});]]></text>
+    <description>angular: forEach</description>
+  </snippet>
+  <snippet>
+    <tag>nglogerr</tag>
+    <text><![CDATA[$log.error('${1:message}');]]></text>
+    <description>angular: log error</description>
+  </snippet>
+  <snippet>
+    <tag>nglog</tag>
+    <text><![CDATA[$log.info('${1:message}');]]></text>
+    <description>angular: log info</description>
+  </snippet>
+  <snippet>
+    <tag>nglogwarn</tag>
+    <text><![CDATA[$log.warn('${1:message}');]]></text>
+    <description>angular: log warn</description>
+  </snippet>
+  <snippet>
+    <tag>ngb</tag>
+    <text><![CDATA[$scope.$broadcast('${1:eventName}', ${2:args});]]></text>
+    <description>angular: scope broadcast</description>
+  </snippet>
+  <snippet>
+    <tag>nge</tag>
+    <text><![CDATA[$scope.$emit('${1:eventName}', ${2:args});]]></text>
+    <description>angular: scope emit</description>
+  </snippet>
+  <snippet>
+    <tag>ngf</tag>
+    <text><![CDATA[$scope.${1:functionName} = function (${2:args}) {
+	$0
+};]]></text>
+    <description>angular: scope function</description>
+  </snippet>
+  <snippet>
+    <tag>ngon</tag>
+    <text><![CDATA[$scope.$on('${1:eventName}', function (event, args) {
+	$0
+});]]></text>
+    <description>angular: scope on</description>
+  </snippet>
+  <snippet>
+    <tag>ngv</tag>
+    <text><![CDATA[$scope.${1:varName} = ${2:value};]]></text>
+    <description>angular: scope variable</description>
+  </snippet>
+  <snippet>
+    <tag>ngw</tag>
+    <text><![CDATA[$scope.$watch('${1:expression}', function (newValue, oldValue) {
+	$0
+});]]></text>
+    <description>angular: watch</description>
+  </snippet>
+</snippets>
