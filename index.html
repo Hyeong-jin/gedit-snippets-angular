@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Gedit-snippets-angular : AngularJS snippets for GEdit" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Gedit-snippets-angular</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/nlaplante/gedit-snippets-angular">View on GitHub</a>
+
+          <h1 id="project_title">Gedit-snippets-angular</h1>
+          <h2 id="project_tagline">AngularJS snippets for GEdit</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/nlaplante/gedit-snippets-angular/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/nlaplante/gedit-snippets-angular/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="gedit-snippets-angular" class="anchor" href="#gedit-snippets-angular"><span class="octicon octicon-link"></span></a>gedit-snippets-angular</h1>
+
+<p>AngularJS snippets for GEdit</p>
+
+<h2>
+<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use</h2>
+
+<p>In GEdit, open <strong>Tools</strong> &gt; <strong>Manage snippets...</strong> and click the <strong>Import snippets</strong> button below the snippets list. Navigate
+to the folder where you cloned this repository and select the <strong>js.xml</strong> file. That's it! The snippets are now imported
+and available in any Javascript file.</p>
+
+<p>To use the snippets, just type the snippet name and hit tab.</p>
+
+<h2>
+<a name="snippets-list" class="anchor" href="#snippets-list"><span class="octicon octicon-link"></span></a>Snippets list</h2>
+
+<h3>
+<a name="ngfor" class="anchor" href="#ngfor"><span class="octicon octicon-link"></span></a>ngfor</h3>
+
+<p>Generates an angular.forEach statement:</p>
+
+<div class="highlight highlight-Javascript"><pre><span class="nx">angular</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">$</span><span class="p">{</span><span class="mi">1</span><span class="o">:</span><span class="nx">collection</span><span class="p">},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">value</span><span class="p">,</span> <span class="nx">key</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$0</span>
+<span class="p">});</span>
+</pre></div>
+
+<h3>
+<a name="nglog" class="anchor" href="#nglog"><span class="octicon octicon-link"></span></a>nglog</h3>
+
+<p>Generates a $log.info call:</p>
+
+<div class="highlight highlight-Javascript"><pre><span class="nx">$log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s1">'${1:message}'</span><span class="p">);</span>
+</pre></div>
+
+<h3>
+<a name="nglogwarn" class="anchor" href="#nglogwarn"><span class="octicon octicon-link"></span></a>nglogwarn</h3>
+
+<p>Generates a $log.warn call:</p>
+
+<div class="highlight highlight-Javascript"><pre><span class="nx">$log</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span><span class="s1">'${1:message}'</span><span class="p">);</span>
+</pre></div>
+
+<h3>
+<a name="nglogerr" class="anchor" href="#nglogerr"><span class="octicon octicon-link"></span></a>nglogerr</h3>
+
+<p>Generates a $log.error call:</p>
+
+<div class="highlight highlight-Javascript"><pre><span class="nx">$log</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'${1:message}'</span><span class="p">);</span>
+</pre></div>
+
+<h3>
+<a name="ngb" class="anchor" href="#ngb"><span class="octicon octicon-link"></span></a>ngb</h3>
+
+<p>Generates a $scope.$broadcast call:</p>
+
+<div class="highlight highlight-Javascript"><pre><span class="nx">$scope</span><span class="p">.</span><span class="nx">$broadcast</span><span class="p">(</span><span class="s1">'${1:eventName}'</span><span class="p">,</span> <span class="nx">$</span><span class="p">{</span><span class="mi">2</span><span class="o">:</span><span class="nx">args</span><span class="p">});</span>
+</pre></div>
+
+<h3>
+<a name="nge" class="anchor" href="#nge"><span class="octicon octicon-link"></span></a>nge</h3>
+
+<p>Generates a $scope.$emit call:</p>
+
+<div class="highlight highlight-Javascript"><pre><span class="nx">$scope</span><span class="p">.</span><span class="nx">$emit</span><span class="p">(</span><span class="s1">'${1:eventName}'</span><span class="p">,</span> <span class="nx">$</span><span class="p">{</span><span class="mi">2</span><span class="o">:</span><span class="nx">args</span><span class="p">});</span>
+</pre></div>
+
+<h3>
+<a name="ngf" class="anchor" href="#ngf"><span class="octicon octicon-link"></span></a>ngf</h3>
+
+<p>Adds a function to the $scope object:</p>
+
+<div class="highlight highlight-Javascript"><pre><span class="nx">$scope</span><span class="p">.</span><span class="nx">$</span><span class="p">{</span><span class="mi">1</span><span class="o">:</span><span class="nx">functionName</span><span class="p">}</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">$</span><span class="p">{</span><span class="mi">2</span><span class="o">:</span><span class="nx">args</span><span class="p">})</span> <span class="p">{</span>
+    <span class="nx">$0</span>
+<span class="p">};</span>
+</pre></div>
+
+<h3>
+<a name="ngv" class="anchor" href="#ngv"><span class="octicon octicon-link"></span></a>ngv</h3>
+
+<p>Adds a variable to the $scope object:</p>
+
+<div class="highlight highlight-Javascript"><pre><span class="nx">$scope</span><span class="p">.</span><span class="nx">$</span><span class="p">{</span><span class="mi">1</span><span class="o">:</span><span class="nx">varName</span><span class="p">}</span> <span class="o">=</span> <span class="nx">$</span><span class="p">{</span><span class="mi">2</span><span class="o">:</span><span class="nx">value</span><span class="p">};</span>
+</pre></div>
+
+<h3>
+<a name="ngon" class="anchor" href="#ngon"><span class="octicon octicon-link"></span></a>ngon</h3>
+
+<p>Adds an event listener to the $scope object:</p>
+
+<div class="highlight highlight-Javascript"><pre><span class="nx">$scope</span><span class="p">.</span><span class="nx">$on</span><span class="p">(</span><span class="s1">'${1:eventName}'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">event</span><span class="p">,</span> <span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$0</span>
+<span class="p">});</span>
+</pre></div>
+
+<h3>
+<a name="ngw" class="anchor" href="#ngw"><span class="octicon octicon-link"></span></a>ngw</h3>
+
+<p>Adds a $watch statement on the $scope object:</p>
+
+<div class="highlight highlight-Javascript"><pre><span class="nx">$scope</span><span class="p">.</span><span class="nx">$watch</span><span class="p">(</span><span class="s1">'${1:expression}'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">newValue</span><span class="p">,</span> <span class="nx">oldValue</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$0</span>
+<span class="p">});</span>
+</pre></div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Gedit-snippets-angular maintained by <a href="https://github.com/nlaplante">nlaplante</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
